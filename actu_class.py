@@ -3,7 +3,7 @@
 '''
 from pprint import pprint
 
-import minify_html
+import htmlmin
 import inspect
 import csv
 import glob
@@ -753,7 +753,7 @@ class ActuClass:
         content = content.replace('  ', ' ')
         
         # keep content_html
-        content_minified = minify_html.minify(content, keep_comments=False)
+        content_minified = htmlmin.minify(content, remove_comments=True, remove_empty_space=True)
         
         new['content_html'] = content_minified
             
