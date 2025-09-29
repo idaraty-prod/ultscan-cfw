@@ -49,7 +49,8 @@ ENABLE_LOGGING = True  # Set to False to silence logs in production
 CSV_OUTPUT_DIR = Path("./outputs/posts")
 CSV_OUTPUT_DIR.mkdir(exist_ok=True)
 
-CLI_BASE_COMMAND = "python exec_ultscan.py"
+# CLI_BASE_COMMAND = "python exec_ultscan.py"
+CLI_BASE_COMMAND = "/home/adminuser/venv/bin/python exec_ultscan.py"
 CLI_DIR_CONFIG = Path("./cfw-configs")
 
 # Configure logging
