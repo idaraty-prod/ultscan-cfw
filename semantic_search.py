@@ -12,7 +12,7 @@ Usage example
 Dependencies: `pandas`, `numpy`, `sentence-transformers` (and its Torch deps).
 """
 
-from __future__ import annotations
+# from __future__ import annotations
 
 import io
 from typing import List, Union
