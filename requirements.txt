@@ -16,5 +16,5 @@ pip>=25.2
 wheel>=0.45.1
 streamlit>=1.50.0
 rich>=14.1.0
-lxml=6.0.2
-sentence-transformers=5.1.1
+lxml==6.0.2
+sentence-transformers==5.1.1
