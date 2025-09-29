@@ -11,5 +11,9 @@ requests==2.24.0
 termcolor==1.1.0
 tqdm==4.63.0
 unicode_slugify==0.1.5
-setuptools==80.9.0
 validator_collection==1.5.0
+pip>=25.0
+setuptools>=65.5.0
+wheel>=0.38.0
+streamlit>=1.38.0
+rich>=10.14.0
