@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from slugify import slugify
 import os
 import re
-import htmlmin
+import minify_html
 from dateutil import parser
 from parsel import Selector
 import urllib
@@ -233,7 +233,7 @@ def get_actu_from_link(self, link, model):
     content = content.replace('  ', ' ')
     
     # keep content_html
-    content_minified = htmlmin.minify(content, remove_comments=True, remove_empty_space=True)
+    content_minified = minify_html.minify(content, keep_comments=False)
     
     new['content_html'] = content_minified
         
